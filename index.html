@@ -13,10 +13,25 @@
             <h1>Hello, Im Robert Cuering</h1>
             <h5>Web Developer</h5>
             <div class="container2">
-                <a href="https://github.com/robert-cuering" target="_blank"><img src="img/github.png" class="github"></a>
-                <a href="mailto:robertevanscuering@gmail.com" target="_blank"><img src="img/gmail logo.png" class="gmail"></a>
+                <a href="https://github.com/robert-cuering" target="_blank"><img onmouseover="effect(this)" 
+                    onmouseout="normal(this)" src="img/github.png" class="github"></a>
+                <a href="mailto:robertevanscuering@gmail.com" target="_blank"><img onmouseover="effect(this)" 
+                    onmouseout="normal(this)" src="img/gmail logo.png" class="gmail"></a>
             </div>
         </span>
     </div>
+
+    <script>
+        function effect(x) {
+          x.style.height = "64px";
+          x.style.width = "64px";
+        }
+        
+        function normal(x) {
+          x.style.height = "50px";
+          x.style.width = "50px";
+        }
+        </script>
+
 </body>
 </html>
