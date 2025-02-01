@@ -9,12 +9,33 @@
 <body>
     <div class="container1">
         <img src="img/angreydoggo.png" class="doggo">
-        <span>
-            <h1>Hello, Im Robert Cuering</h1>
-            <h5>Web Developer</h5>
+        <span> 
+            <h1 id="demo"></h1>
+                <script>
+                    class Name {
+                        constructor(fname, lname){
+                            this.fname = fname;
+                            this.lname = lname;
+                        }
+                    }
+                    const myName1 = new Name("Robert", "Cuering")
+                    document.getElementById("demo").innerHTML =
+                    "Hello, I am " + myName1.fname + " " + myName1.lname;
+                </script>
+            <h5 id="demo2"></h5>
+                <script>
+                    class Position {
+                        constructor(position){
+                            this.position = position;
+                        }
+                    }
+                    const myPosition = new Position("Web Developer")
+                    document.getElementById("demo2").innerHTML =
+                    myPosition.position;
+                </script>
             <div class="container2">
                 <a href="https://github.com/robert-cuering" target="_blank"><img onmouseover="effect(this)" 
-                    onmouseout="normal(this)" src="img/github.png" class="github"></a>
+                    onmouseout="normal(this)" src="img/github2.jpg" class="github"></a>
                 <a href="mailto:robertevanscuering@gmail.com" target="_blank"><img onmouseover="effect(this)" 
                     onmouseout="normal(this)" src="img/gmail logo.png" class="gmail"></a>
             </div>
@@ -32,6 +53,5 @@
           x.style.width = "50px";
         }
         </script>
-
 </body>
 </html>
